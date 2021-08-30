@@ -2,6 +2,7 @@ const container = document.querySelector('#container');
 let columns;
 let rows;
 const defaultSize = 16;
+
 function createGrid(columns, rows) { // Code that generates the divs for the drawing grid
     container.style.setProperty('--grid-rows', rows);
     container.style.setProperty('--grid-cols', columns);

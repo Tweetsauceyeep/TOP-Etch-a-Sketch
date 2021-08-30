@@ -15,8 +15,8 @@
 }
 
 .grid-item {
-  height:25px;
-  width:25px;
-  border: 1px solid #ddd;
+  height:auto;
+  width:auto;
+  
   /* i remove one em padding thing and now suddenly it centers and stuff LOL*/
 }
