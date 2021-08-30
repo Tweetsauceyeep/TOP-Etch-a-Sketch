@@ -19,7 +19,7 @@ function createGrid(columns, rows) { // Code that generates the divs for the dra
 };
 createGrid(defaultSize,defaultSize)
 
-// button to reset and create a new grid
+// button to erase drawings and create a new grid  ඞ
 const resetButton = document.querySelector('#resetbutton');
 resetButton.addEventListener('click', resetGrid);
 
@@ -28,24 +28,26 @@ function resetGrid(){
     gridArray.forEach((elements) => {
       container.removeChild(elements);
     });
-    let newSize = prompt('whats the new size you want? (type one number)')
+    let newSize = prompt('whats the new size you want? (type one number max: 100 or die)')
     createGrid(newSize,newSize)
 }
  
 
-// Function to use rainbow colors
+// Function to use rainbow colors ((do This Later Bro because it is optional hehe))))
+/*
 const rainbowButton = document.querySelector('#rainbowcolor')
 
-rainbowButton.addEventListener('click',)
+rainbowButton.addEventListener('click', changeColor)
 
-function changecolor(){
-
+function changeColor(){
+    let elements = document.querySelector('.grid-item')
+    elements.addEventListener*('hover', rainbowColor)
+    function rainbowColor() {
+        const Color1 = Math.floor(Math.random() * 256);
+        const Color2 = Math.floor(Math.random() * 256);
+        const Color3 = Math.floor(Math.random() * 256);
+        elements.style.backgroundColor = `rgb(${Color1}, ${Color2}, ${Color3})`;
+    }
+    
 }
-
-
-function rainbowColor() {
-    const Color1 = Math.floor(Math.random() * 256);
-    const Color2 = Math.floor(Math.random() * 256);
-    const Color3 = Math.floor(Math.random() * 256);
-    elements.style.backgroundColor = `rgb(${Color1}, ${Color2}, ${Color3})`;
-  }
+*/

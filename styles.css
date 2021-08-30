@@ -20,3 +20,6 @@
   
   /* i remove one em padding thing and now suddenly it centers and stuff LOL*/
 }
+#header {
+  text-align: center;
+}
