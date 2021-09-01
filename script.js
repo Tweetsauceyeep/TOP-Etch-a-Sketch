@@ -28,8 +28,13 @@ function resetGrid(){
     gridArray.forEach((elements) => {
       container.removeChild(elements);
     });
-    let newSize = prompt('whats the new size you want? (type one number max: 100 or die)')
-    createGrid(newSize,newSize)
+    let newSize = prompt('How big do you want your next grid?')
+    if (newSize > 100) {
+       alert('size was bigger than 100 - try again')  
+    } else {
+        createGrid(newSize, newSize)
+    }
+
 }
  
 
