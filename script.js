@@ -30,7 +30,9 @@ function resetGrid(){
     });
     let newSize = prompt('How big do you want your next grid?')
     if (newSize > 100) {
-       alert('size was bigger than 100 - try again')  
+       alert('size was bigger than 100 - press clear button again and input proper value')  
+    } else if(typeof newSize === 'string'){
+        alert('please enter a number - press clear button again and input proper value')
     } else {
         createGrid(newSize, newSize)
     }
